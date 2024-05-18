@@ -37,6 +37,12 @@ body {
     padding: 16px;
 }
 
+.list-item:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
 .list-item__img img {
     width: 80px;
     border-radius: 50%;
@@ -56,4 +62,16 @@ body {
 .list-item__email {
     margin: 5px 0 0 0;
     color: #aaa;
+}
+
+.list-item__action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__action {
+    opacity: .3;
 }
